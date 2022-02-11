@@ -1,0 +1,267 @@
+main {
+  display: grid;
+  grid-template-columns: 0.4fr 1.9fr 0.7fr;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.side-nav {
+  align-self: flex-start;
+  margin: 3rem 0rem;
+  justify-self: center;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-section {
+  align-self: center;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  margin: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.blog {
+  display: grid;
+  gap: 1rem;
+}
+
+.blog .blog-body p {
+  padding: 0.3rem;
+  line-height: 1.4rem;
+}
+
+.blog .blog-title {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.blog-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.blog-comments h1 {
+  font-size: x-large;
+}
+
+.user-data {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  border-bottom: 1px solid grey;
+}
+
+.comment {
+  /* border: 1px solid black; */
+  background-color: #e6e6e6;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.comment-body {
+  font-weight: bolder;
+}
+
+.other-side {
+  /* align-self: center; */
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+  /* position: sticky; */
+}
+
+.user-about {
+  /* padding: 0.3rem 0; */
+  line-height: 1.4rem;
+}
+
+.user-profile,
+.related-post {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.post {
+  border-bottom: 1px solid gray;
+  background-color: #e6e6e6;
+  padding: 1rem;
+  transition: all 200ms ease-in;
+}
+
+.post:hover {
+  background-color: black;
+  color: #e6e6e6;
+}
+
+img.blog-img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  /* height: auto; */
+}
+
+.blog-fig {
+  text-align: center;
+  margin: 2rem;
+}
+
+.user-basic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem;
+  font-size: x-large;
+}
+
+.follow-btn button {
+  /* padding: 0.3rem 7rem; */
+  background-color: orange;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  /* max-width: 90%; */
+}
+
+.follow-btn button:hover {
+  background-color: orangered;
+}
+
+.user-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.like,
+.saved,
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like:hover,
+.saved:hover,
+.share:hover {
+  transform: scale(1.1);
+}
+
+.user-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-control:hover {
+  transform: scale(1.1);
+}
+
+.write-comment form .put-comment {
+  width: 100%;
+  height: 100%;
+  padding: 3px 10px;
+  color: black;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+
+.write-comment form:focus-within {
+  border: 3px solid skyblue;
+}
+
+.write-comment form {
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #fff;
+  min-width: 38% !important;
+  border-radius: 7px;
+  border: 1px solid #d6d6d6;
+}
+
+.write-comment form button {
+  padding: 0 15px;
+  color: #5c5c5c;
+  font-size: 25px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  main {
+    gap: 0.1rem;
+  }
+  .main-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    grid-row: 1/2;
+  }
+  .other-side {
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  .user-profile,
+  .related-post {
+    padding: 16px 16px;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    margin: 0%;
+  }
+
+  h1 {
+    /* font-size: 0.8rem; */
+    line-height: 1.2;
+  }
+
+  .side-panel {
+    flex-direction: row;
+    grid-row: 2/3;
+  }
+
+  .follow-btn button {
+    padding: 0.5rem 10rem;
+  }
+}

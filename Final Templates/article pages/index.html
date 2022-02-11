@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            GPA CONNECT
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="nav-items">
+            <li class="log_in"><a href="#">Log In</a></li>
+            <li class="create_account"><a href="#">Create Account</a></li>
+        </div>
+    </nav>
+
+    <main>
+        <aside class="side-nav">
+            <div class="side-panel">
+                <div class="like">
+                    <i class="fas fa-thumbs-up"></i>
+                    Like
+                </div>
+                <div class="saved">
+                    <i class="fas fa-bookmark"></i>
+                    Save
+                </div>
+                <div class="share">
+                    <i class="fas fa-share-alt"></i>
+                    Share
+                </div>
+            </div>
+        </aside>
+        <section class="main-section">
+            <article class="blog">
+                <h1 class="blog-title">
+                    How We Created The Django Blog
+                </h1>
+                <div class="blog-body">
+                    <p>
+                        The team members were, Swarup Deepak Vishwas, Yash Sandip Aher and Chetan Dagaji Patil.And the main challenge for us was to create the community-based website in Django.
+                    </p>
+                    <p>
+                        Yep, Django. They fools fell for django without even knowing 'bout it. They should have taken PHP or Node but, Nah! their over-confident killed them.
+                    </p>
+                    <p>
+                        FYI if you don't know about python code this is here
+                        <pre>
+                        <code class="language-python">
+variable = input("Enter your name : ")
+print("Hello, " + variable)
+                        </code>
+                            </pre>
+
+                    </p>
+                    <p>
+                        They wanted to become Pied Pipers of GPAWASARI and just like Pied Piper, we don't know anything about it.
+                        <figure class="blog-fig">
+                            <img src="./silicon-valley-hbo.png" alt="silicon-valley-hbo" class="blog-img">
+                            <figcaption>Silicon Valley</figcaption>
+                        </figure>
+                    </p>
+                </div>
+                <hr>
+                <div class="blog-comments">
+                    <h1>Comments: </h1>
+                    <div class="write-comment">
+                        <form action="#">
+                            <textarea name="comment" id="comment" class="put-comment" placeholder="Your Comment.." required cols="30" rows="10"></textarea>
+                            <button type="submit" class="fas fa-paper-plane"></button>
+                        </form>
+                    </div>
+                    <div class="comment">
+                        <div class="user-data">
+                            <div class="commenter-name">Yash Aher</div>
+                            <div class="comment-date">Date: 11-02-2022</div>
+                        </div>
+                        <div class="comment-body">
+                            You Rascal!! Why did you put this on Internet!!
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="user-data">
+                            <div class="commenter-name">Chetan Patil</div>
+                            <div class="comment-date">Date: 11-02-2022</div>
+                        </div>
+                        <div class="comment-body">
+                            C'mon Yash he isn't writing on Internet! It is just VS Code
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="user-data">
+                            <div class="commenter-name">Yash Aher</div>
+                            <div class="comment-date">Date: 11-02-2022</div>
+                        </div>
+                        <div class="comment-body">
+                            Chetan Yeda
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="user-data">
+                            <div class="commenter-name">Chetan Patil</div>
+                            <div class="comment-date">Date: 11-02-2022</div>
+                        </div>
+                        <div class="comment-body">
+                            Yash Balish..!!
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="user-data">
+                            <div class="commenter-name">Swarup Vishwas</div>
+                            <div class="comment-date">Date: 11-02-2022</div>
+                        </div>
+                        <div class="comment-body">
+                            Bss Rao!! 🤣🤣
+                        </div>
+                    </div>
+                </div>
+            </article>            
+        </section>
+        <section class="other-side">
+            <div class="user-profile">
+                <div class="user-basic">
+                    <h2 class="user-name">Swarup Vishwas</h2>
+                </div>
+                <div class="user-about">Proud student of GPA, and sometimes called as HBP</div>
+                <div class="user-stat">
+                    <div class="follow user-control">
+                        <i class="fas fa-users"></i>
+                        <div class="follow-num">1000</div>
+                    </div>
+                    <div class="all-post user-control">
+                        <i class="fas fa-quote-left"></i>
+                        <div class="allpost-name"><a href="#">all post</a></div>
+                    </div>
+                </div>
+                <div class="follow-btn">
+                    <button>FOLLOW</button>
+                </div>
+            </div>
+            <div class="related-post">
+                <h1 class="rel">Related Posts:</h1>
+                <div class="post">
+                    <a href="#">
+                        <h3>GPA is best</h3>
+                    </a>
+                </div>
+                <div class="post">
+                    <a href="#">
+                        <h3>Is GPA Going offline</h3>
+                    </a>
+                </div>
+                <div class="post">
+                    <a href="#">
+                        <h3>YSC has just launched the product!!</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; GPA Community
+    </footer>
+    <script src="./prism.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
